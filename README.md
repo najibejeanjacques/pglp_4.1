@@ -1,6 +1,6 @@
 # pglp_4.1
 
-1) Representons les personnels par une classe immuable Personnel:
+1) Representons les personnels par une classe immuable Personnel en nous appuyant sur le pattern Builder:
 
 -Créons la classe Personnel
 
@@ -71,3 +71,6 @@
         }
     
     }
+    
+    
+2) Définissons la notion de groupe de personnels en nous appuyant sur le pattern Composite:
