@@ -10,14 +10,14 @@
         private String prenom;
         private String fonction;
         private LocalDate dateNaissance;
-        private List<String> annuaireTelephonique;
+        //private List<String> annuaireTelephonique;
     
         private Personnel(PersonnelBuilder builder)
         {
               this.nom = builder.nom;
               this.prenom = builder.prenom;
               this.dateNaissance = builder.dateNaissance;
-              this.annuaireTelephonique = builder.annuaireTelephonique;
+              //this.annuaireTelephonique = builder.annuaireTelephonique;
         }
         
         public String getNom()
@@ -35,11 +35,12 @@
             return dateNaissance;
         }
         
+        /***
         public List<String> getAnnuaire()
         {
     	    return annuaireTelephonique;
         }
-        
+        ***/
         
          public static class PersonnelBuilder
          {
@@ -47,14 +48,14 @@
             private String prenom;
             private String fonction;
             private LocalDate dateNaissance;
-            private List<String> annuaireTelephonique
+            //private List<String> annuaireTelephonique
           
-            public PersonnelBuilder(String nom, String prenom,LocalDate dateNaissance,List<String> annuaire)
+            public PersonnelBuilder(String nom, String prenom,LocalDate dateNaissance)
             {
               this.nom = nom;
               this.prenom = prenom;
               this.dateNaissance = dateNaissance;
-              this.annuaireTelephonique = annuaire;
+              //this.annuaireTelephonique = annuaire;
             }
           
             public PersonnelBuilder fonction(String fonction)
