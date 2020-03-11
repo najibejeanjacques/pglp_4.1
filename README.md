@@ -74,10 +74,63 @@
     }
     
     
-2) Définissons la notion de groupe de personnels en nous appuyant sur le pattern Composite:
+2) Définissons la notion de groupe de personnels (Annuaire de personnes) en nous appuyant sur le pattern Composite:
 
            public interface Annuaire
            {
-                
+                public void printAnnuaireName();
            }
+           
+           
+           public class PersonnelAnnuaire implements Annuaire 
+           {
+
+	            private String nameAnnuaire;
+	            private List<Personnel> listPersonnels = new ArrayList<Personnel>();
+	
+	            @Override
+	            public void printAnnuaireName() 
+                {
+		            // TODO Auto-generated method stub
+		            System.out.println("Annuaire de "+nameAnnuaire);
+	            }
+	
+	            public PersonnelAnnuaire(String nom)
+	            {
+		            this.nameAnnuaire = nom;
+	            }
+	
+	            public void addPersonnel(Personnel personnel)
+	            {
+		            listPersonnels.add(personnel);
+	            }
+	
+	            public void removePersonnel(Personnel personnel)
+	            {
+		            listPersonnels.remove(personnel);
+	            }
+	
+	            public void getPersonnel()
+	            {
+		
+	            }
+		
+        }
         
+3) Implementons deux types d'affichage en définissant deux stratégies de parcours de la structure:
+
+            public Iterator<Personnel> getPersonnelIterator()
+	        {
+	            while(this.listPersonnels.iterator().hasNext())
+		        {
+			        System.out.println("Nom: "+this.listPersonnels.iterator().toString());
+		        }
+		
+		        return this.listPersonnels.iterator();
+	        }
+	
+	        public List<Personnel> getPersonnelIterable()
+	        {
+		        return this.listPersonnels;
+	        }
+
