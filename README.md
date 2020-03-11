@@ -76,35 +76,8 @@
     
 2) Définissons la notion de groupe de personnels en nous appuyant sur le pattern Composite:
 
-        public interface PersonnelBase
-        {
-                public String fonction;
-        }
+           public interface Annuaire
+           {
+                
+           }
         
-        
-        public class PersonnelComposite implements PersonnelBase
-        {
-                private Collection children;
-                
-                public PersonnelComposite()
-                {
-                       children = ne ArrayList();
-                }
-                
-                public void add(PersonnelBase personnel)
-                {
-                        children.add(personnel);
-                }
-                
-                public void remove(PersonnelBase personnel)
-                {
-                        children.remove(personnel);
-                }
-                
-                public Iterator getChildren()
-                {
-                        return children.Iterator();
-                }
-        }
-        
-
