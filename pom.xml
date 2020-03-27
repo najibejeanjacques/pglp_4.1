@@ -13,6 +13,11 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+      <groupId>com.github.spotbugs</groupId>
+      <artifactId>spotbugs</artifactId>
+      <version>4.0.1</version>
+    </dependency> 		
   </dependencies>
  
   
@@ -42,6 +47,13 @@
  
   <reporting>
   	<plugins>
+  	 <plugin>
+        <groupId>com.github.spotbugs</groupId>
+  		<artifactId>spotbugs-maven-plugin</artifactId>
+  		<version>4.0.0</version>
+      </plugin>
+  	
+  	
   	 <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-checkstyle-plugin</artifactId>

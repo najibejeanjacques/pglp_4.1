@@ -25,8 +25,8 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2020</copyright>
     <item>
-      <title>File: 1,
-             Errors: 59,
+      <title>File: 3,
+             Errors: 118,
              Warnings: 0,
              Infos: 0
       </title>
@@ -46,6 +46,20 @@ under the License.
           <tbody>
                           <tr>
                 <td>
+                  <a href="${project.url}/checkstyle.html#gl_pack.Telephone.java">gl_pack/Telephone.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  53
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="${project.url}/checkstyle.html#gl_pack.Personnel.java">gl_pack/Personnel.java</a>
                 </td>
                 <td>
@@ -55,7 +69,21 @@ under the License.
                   0
                 </td>
                 <td>
-                  59
+                  45
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#gl_pack_test.PersonnelTest.java">gl_pack_test/PersonnelTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  20
                 </td>
               </tr>
                       </tbody>
